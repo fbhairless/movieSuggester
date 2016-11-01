@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Finder</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <!-- External JS -->
+    <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron text-center">
+            <h1>Movie Finder</h1>
+          </div>
+        </div>
+        <form>
+          <div class="col-md-4 col-md-offset-2">
+            <div class="form-group">
+              <label class="startTime control-label">Start Time</label>
+              <input id="startTime" class="form-control" type="text" placeholder="Ex: 1pm">
+              <p id="startTimeError">please enter time in correct format</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="endTime control-label">End Time</label>
+              <input id="endTime" class="form-control" type="text" placeholder="Ex: 1pm">
+              <p id="endTimeError">please enter time in correct format</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <div class="form-group">
+              <label class="genre">Genre</label>
+              <input id="genre" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="age">Your age</label>
+              <input id="age" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" id="movieButton" class="btn btn-info btn-lg">Find Movies</button>
+        </div>
+      </form>
+      <div class="col-md-12 text-center">
+        <h2>You should check out these movies:</h2>
+        <ul id="movies">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
